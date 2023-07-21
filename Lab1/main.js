@@ -94,4 +94,4 @@ function Prime(num) {
   
   console.log(semiprime(15)); 
   console.log(semiprime(49)); 
-  console.log(semiprime(97)); 
+  console.log(semiprime(12)); 
