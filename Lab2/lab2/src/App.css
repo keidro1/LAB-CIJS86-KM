@@ -1,0 +1,92 @@
+.App {
+margin: 0;
+padding: 0;
+}
+
+.input-task {
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  padding: 10px;
+  width: 30%;
+  font-size: 16px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 10px;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+/* CSS cho checkbox */
+.checkbox-round {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1px solid #777;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.checkbox-container {
+  display: inline-block;
+  position: relative;
+  width: 20px;
+  height: 20px;
+  margin-right: 30px;
+}
+
+.checkbox-container .checkmark::after {
+  content: "";
+  position: absolute;
+  display: none;  
+  top: 6px;
+  left: 6px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #41df32;
+}
+
+/* Hiệu ứng khi bấm tick */
+.checkbox-round:checked + .checkmark {
+  background-color: #41df32;
+}
+
+.checkbox-round:checked + .checkmark::after {
+  display: block;
+}
+
+
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  padding: 20px;
+}
+
+p {
+  font-size: 14px;
+  color: #777;
+}
+
+.mindx-todolist {
+  padding-right: 70%;
+  font-size: 14px;
+  color: #777;
+}
