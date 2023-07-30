@@ -1,0 +1,27 @@
+/* GLOBAL */
+
+* {
+  /* Xóa mặc định thêm padding của các thẻ heading, p */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header,
+section,
+footer,
+aside,
+nav,
+main,
+article,
+figure {
+  display: block;
+}
+
+html,
+body {
+  font-family: "Fira Code", monospace;
+  /* In here We define value of rem is: 1rem=20px */
+  font-size: 20px;
+  /* if not defining range of rem -> Browse will define 1rem=16px */
+}
