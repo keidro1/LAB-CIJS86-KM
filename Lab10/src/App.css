@@ -1,0 +1,50 @@
+.container {
+  width: 100vw;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.pokemonList {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1rem;
+}
+
+.pokemon {
+  height: 300px;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+.pokemon-name {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.loading {
+  position: fixed;
+  z-index: 999;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search-results-list{
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-auto-rows: minmax(0, 1fr); /* Các hàng co giản theo kết quả search */
+  grid-auto-flow: dense; /* Xếp tự động theo hàng */
+  gap: 1rem;
+  border: 2px solid #36c231;
+  margin-bottom: 20px;
+  padding: 2px;
+}
